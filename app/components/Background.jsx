@@ -173,7 +173,7 @@ export default function Background() {
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseleave', handleMouseLeave);
         };
-    }, [theme]);
+    }, [theme, mounted]);
 
     return (
         <div

@@ -214,6 +214,44 @@ section {
   box-shadow: 0 0 15px var(--glow);
 }
 
+/* ——— Visitor Tracker ——— */
+.visitor-tracker {
+  padding: 1.5rem;
+}
+
+.visitor-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.visitor-stat {
+  padding: 0.9rem 0.95rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.visitor-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.visitor-stat strong {
+  font-size: 1.15rem;
+  color: var(--foreground);
+}
+
+@media (max-width: 600px) {
+  .visitor-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ——— Timeline ——— */
 .timeline-item {
   position: relative;
